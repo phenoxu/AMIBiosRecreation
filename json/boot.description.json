@@ -3,40 +3,41 @@
         "id": "BNS",
         "description": "Boot numlock state"
     },
-        {
+    {
         "id": "FSLD",
         "description": "Full Screen Logo Display"
     },
-        {
+    {
         "id": "FB",
         "description": "Enable or disables boot with initialization of minimal set of devices requiered to launch active boot option. Has no effect for BBS boot options."
     },
-        {
+    {
         "id": "BMS",
         "description": "Select boot mode LEGACY/UEFI"
     },
-        {
+    {
         "id": "BO1",
         "description": "Sets the system boot order"
     },
-        {
+    {
         "id": "BO2",
         "description": "Sets the system boot order"
     },
-        {
+    {
         "id": "BO3",
         "description": "Sets the system boot order"
     },
-        {
+    {
         "id": "BO4",
         "description": "Sets the system boot order"
     },
-        {
+    {
         "id": "BO5",
         "description": "Sets the system boot order"
     },
-        {
+    {
         "id": "UUHDDBP",
         "description": "Scpecifies the Boot Device Priority sequence from available USB UEFI Hard Disk Drive."
     }
+
 ]
