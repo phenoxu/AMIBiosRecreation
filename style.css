@@ -49,8 +49,12 @@ main {
 article {
     padding: 14px 32px;
 }
-.selectible * {
+.lined * {
     display: inline;
+}
+.secondary {
+    position: absolute;
+    left: 50%;
 }
 .selectible:hover {
     color: white;
@@ -110,3 +114,4 @@ hr {
   outline: 1px solid red;
 
 }*/
+
