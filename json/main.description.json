@@ -1,0 +1,26 @@
+[
+    {
+        "id": "SD",
+        "description": "Set the Date. Use Tab to switch between Data elements."
+    },
+    {
+        "id": "ST",
+        "description": "Set the Time. Use Tab to switch between Data elements."
+    },
+    {
+        "id": "PI",
+        "description": "Please leave me alone"
+    },
+    {
+        "id": "CI",
+        "description": "CPU is the thing that does the math."
+    },
+    {
+        "id": "DI",
+        "description": "I dont even know what it stands for."
+    },
+    {
+        "id": "SS",
+        "description": "Well yes but no, hun ? ok, by?"
+    }
+]
