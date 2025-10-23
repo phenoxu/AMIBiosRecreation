@@ -29,11 +29,12 @@ button {
     font: inherit;
     cursor: pointer;
 }
-nav button {
+nav a {
     background-color: blue;
     color: lightgray;
     padding: 0 1em;
     height: 100%;
+    cursor: pointer;
 }
 main {
     display: flex;
@@ -106,4 +107,5 @@ hr {
 }
 /** {
   outline: 1px solid red;
+
 }*/
