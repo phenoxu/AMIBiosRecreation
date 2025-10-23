@@ -1,7 +1,7 @@
 const selectible = document.querySelectorAll('.selectible');
 const description = document.getElementById('description');
 
-fetch('json/boot.description.json')
+fetch('/AMIBiosRecreation/json/boot.description.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Erreur lors du chargement du fichier JSON');
@@ -28,4 +28,5 @@ fetch('json/boot.description.json')
         console.error('Error:', error);
         description.innerHTML = '<span style="color: red;">Error while loading...</span>';
     });
+
     
