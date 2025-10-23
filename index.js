@@ -1,7 +1,10 @@
+const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+const path = `/AMIBiosRecreation/json/${currentPage}.description.json`;
+
 const selectible = document.querySelectorAll('.selectible');
 const description = document.getElementById('description');
 
-fetch('/AMIBiosRecreation/json/boot.description.json')
+fetch(path)
     .then(response => {
         if (!response.ok) {
             throw new Error('Erreur lors du chargement du fichier JSON');
@@ -28,5 +31,3 @@ fetch('/AMIBiosRecreation/json/boot.description.json')
         console.error('Error:', error);
         description.innerHTML = '<span style="color: red;">Error while loading...</span>';
     });
-
-    
