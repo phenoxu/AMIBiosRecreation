@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="metadata"><p>Aptio Setup Utility - Copyrights (C) 2025 phenox, Inc.</p></header>
+    <nav>
+        <button>Main</button>
+        <button>Advanced</button>
+        <button class="active">Boot</button>
+        <button>Security</button>
+        <button>Save & Exit</button>
+    </nav>
+    <main>
+        <article class="container screen">
+            <p class="title">Boot Configuration</p>
+            <div id="BNS" class="selectible">
+                <p>Boot NumLock State</p>
+                <button>On</button>
+            </div>
+            <div id="FSLD" class="selectible">
+                <p>Full Screen Logo Display</p>
+                <button>Enabled</button>
+            </div>
+            <div id="FB" class="selectible">
+                <p>Fast Boot</p>
+                <button>Enabled</button>
+            </div>
+            <div id="BMS" class="selectible">
+                <p>Boot Mode Select</p>
+                <button>UEFI with CMS</button>
+            </div>
+            <br>
+            <p class="title">FIXED BOOT ORDER Priorities</p>
+            <div id="BO1" class="selectible">
+                <p>Boot Option #</p>
+                <button>USB Hard Disk:UEFI:...</button>
+            </div>
+            <div id="BO2" class="selectible">
+                <p>Boot Option #2</p>
+                <button>USB CD/DVD</button>
+            </div>
+            <div id="BO3" class="selectible">
+                <p>Boot Option #3</p>
+                <button>UEFI with CMS</button>
+            </div>
+            <div id="BO4" class="selectible">
+                <p>Boot Option #4</p>
+                <button>CD/DVD</button>
+            </div>
+            <div id="BO5" class="selectible">
+                <p>Boot Option #5</p>
+                <button>Network</button>
+            </div>
+            <br>
+            <p id="UUHDDBP" class="option selectible">UEFI USB Hard Disk Drive BBS Priorities</p>
+        </article>
+        <aside class="container">
+            <div class="inAside">
+                <p id="description"><span class="defaultText">A very detailed description of hovered item</span></p>
+            </div>
+            <hr/>
+            <div class="inAside">
+                <p>→←: Select Screen
+                <br>↑↓: Select Item
+                <br>Enter: Select
+                <br>+/-: Change Opt.
+                <br>F1: General Help
+                <br>F9: Optimized Default
+                <br>F10: Save & Exit
+                <br>ESC: Exit</p>
+            </div>
+        </aside>
+    </main>
+    <footer class="metadata"><p>Version idk.0. Copyrights (C) 2025 phenox, Inc.</p></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
