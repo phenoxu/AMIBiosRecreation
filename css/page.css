@@ -1,0 +1,119 @@
+@font-face {
+    font-family: GA_8x14;
+    src: url("/font/Px437_ACM_VGA_8x16.ttf");
+}
+/* main divider */
+body {
+    display: grid;
+    grid-template-rows: 1lh 1lh 1fr 1lh;
+    background-color: blue;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body * {
+    margin: 0;
+    padding: 0;
+    font-family: GA_8x14;
+    font-size: 22px;
+    line-height: 1;
+}
+p, br {
+    margin-bottom: 4px;
+}
+.title {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+.navigationBar {
+    display: flex;
+    padding: 0 32px;
+    height: 1em;
+}
+.buttonNavigationBar {
+    background-color: blue;
+    color: lightgray;
+    border: none;
+    padding: 0 1em;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+.active {
+    background-color: lightgray;
+    color: blue;
+}
+.container {
+    background-color: lightgray;
+    padding: 12px 6px 12px 6px;
+    color: blue;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border: 1px solid blue;
+}
+.mainSetting {
+    position: relative;
+    padding: 14px 32px;
+    flex: 9;
+}
+.mainCategory {
+    color: black;
+}
+.line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+}
+.selectible:hover {
+    color: white;
+}
+.mainSetting div button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+.mainSetting div button::before {
+    content: "[";
+}
+.mainSetting div button::after {
+    content: "]";
+}
+.mainOption {
+    position: relative;
+}
+.mainOption::before {
+    content: "▶";
+    position: absolute;
+    left: -28px;
+}
+.hrVertical {
+    border: none;
+    width: 1px;
+    background-color: blue;
+}
+.mainInformation {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.mainInformation div {
+    flex: 1;
+    padding: 1lh 6px 1lh 6px;
+}
+.hrHorizontal {
+    border: none;
+    height: 1px;
+    background-color: blue;
+    margin: 0 6px;
+}
+
+/** {
+  outline: 1px solid red;
+
+}*/

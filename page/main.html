@@ -2,87 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
-    <link rel="stylesheet" href="/AMIBiosRecreation/style.css">
+    <title>Main</title>
+    <link rel="stylesheet" href="../css/page.css">
   </head>
   <body>
-    <header class="metadata"><p>Aptio Setup Utility - Copyrights (C) 2025 phenox, Inc.</p></header>
-    <nav>
-        <a href="/AMIBiosRecreation/page/main.html" class="active">Main</a>
-        <a href="/AMIBiosRecreation/page/advanced.html">Advanced</a>
-        <a href="/AMIBiosRecreation/page/boot.html">Boot</a>
-        <a href="/AMIBiosRecreation/page/security.html">Security</a>
-        <a href="/AMIBiosRecreation/page/save & exit.html">Save & Exit</a>
-    </nav>
-    <main>
-        <article class="container screen">
-            <div class="lined title">
-                <p>Project Version</p>
-                <p class="secondary">hun?</p>
+    <div class="title">
+        <p>Aptio Setup Utility - Copyrights (C) 2025 phenox, Inc.</p>
+    </div>
+    <div class="navigationBar">
+        <a href="../page/main.html" class="buttonNavigationBar active">Main</a>
+        <a href="../page/advanced.html" class="buttonNavigationBar">Advanced</a>
+        <a href="../page/boot.html" class="buttonNavigationBar">Boot</a>
+        <a href="../page/security.html" class="buttonNavigationBar">Security</a>
+        <a href="../page/save & exit.html" class="buttonNavigationBar">Save & Exit</a>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="mainSetting">
+                <div class="line mainCategory">
+                    <p>Project Version</p>
+                    <p>hun?</p>
+                </div>
+                <div id="systemDate" class="line selectible">
+                    <p>System Date</p>
+                    <button>today's date is trus me bro</button>
+                </div>
+                <div id="systemTime" class="line selectible">
+                    <p>System Time</p>
+                    <button>no thank you</button>
+                </div>
+                <div class="line mainCategory">
+                    <p>QPI Link Speed</p>
+                    <p class="secondary">8.0 GT/s</p>
+                </div>
+                <div class="line mainCategory">
+                    <p>Total Memory</p>
+                    <p class="secondary">384GB (DDR3)</p>
+                </div>
+                <div class="line mainCategory">
+                    <p>Current Memory Speed</p>
+                    <p>brob not a lot</p>
+                </div>
+                <div class="line mainCategory">
+                    <p>USB Devices:</p>
+                    <p>1 Drive, 2 Keyboards, 1 Mouse, 4 Hubs</p>
+                </div>
+                <div class="line mainCategory">
+                    <p>BMC Status</p>
+                    <p>Wealthy</p>
+                </div>
+                <div class="line mainCategory">
+                    <p>BMC Firmware Revision</p>
+                    <p>suposed to be bunch of number</p>
+                </div>
+                <p id="productInformation" class="mainOption selectible">Product Information</p>
+                <p id="cpuInformation" class="mainOption selectible">CPU Information</p>
+                <p id="dimmInformation" class="mainOption selectible">DIMM Information</p>
+                <br>
+                <p id="securitySetting" class="mainOption selectible">Security Setting</p>
             </div>
-            <div id="SD" class="lined selectible">
-                <p>System Date</p>
-                <button>today's date is trus me bro</button>
+            <hr class="hrVertical">
+            <div class="mainInformation">
+                <div>
+                    <p id="description"><span class="defaultText">A very detailed description of hovered item</span></p>
+                </div>
+                <hr class="hrHorizontal">
+                <div>
+                    <p>→←: Select Screen
+                    <br>↑↓: Select Item
+                    <br>Enter: Select
+                    <br>+/-: Change Opt.
+                    <br>F1: General Help
+                    <br>F9: Optimized Default
+                    <br>F10: Save & Exit
+                    <br>ESC: Exit</p>
+                </div>
             </div>
-            <div id="ST" class="lined selectible">
-                <p>System Time</p>
-                <button>no thank you</button>
-            </div>
-            <div class="lined title">
-                <p>QPI Link Speed</p>
-                <p class="secondary">8.0 GT/s</p>
-            </div>
-            <div class="lined title">
-                <p>Total Memory</p>
-                <p class="secondary">384GB (DDR3)</p>
-            </div>
-            <div class="lined title">
-                <p>Current Memory Speed</p>
-                <p class="secondary">brob not a lot</p>
-            </div>
-            <div class="lined title">
-                <p>USB Devices:</p>
-                <p class="secondary">1 Drive, 2 Keyboards, 1 Mouse, 4 Hubs</p>
-            </div>
-            <div class="lined title">
-                <p>BMC Status</p>
-                <p class="secondary">Wealthy</p>
-            </div>
-            <div class="lined title">
-                <p>BMC Firmware Revision</p>
-                <p class="secondary">suposed to be bunch of number</p>
-            </div>
-            <p id="PI" class="option selectible">Product Information</p>
-            <p id="CI" class="option selectible">CPU Information</p>
-            <p id="DI" class="option selectible">DIMM Information</p>
-            <br>
-            <p id="SS" class="option selectible">Security Setting</p>
-
-        </article>
-        <aside class="container">
-            <div class="inAside">
-                <p id="description"><span class="defaultText">A very detailed description of hovered item</span></p>
-            </div>
-            <hr/>
-            <div class="inAside">
-                <p>→←: Select Screen
-                <br>↑↓: Select Item
-                <br>Enter: Select
-                <br>+/-: Change Opt.
-                <br>F1: General Help
-                <br>F9: Optimized Default
-                <br>F10: Save & Exit
-                <br>ESC: Exit</p>
-            </div>
-        </aside>
-    </main>
-    <footer class="metadata"><p>Version idk.0. Copyrights (C) 2025 phenox, Inc.</p></footer>
-    <script src="/AMIBiosRecreation/index.js"></script>
+        </div>
+    </div>
+    <div class="title">
+        <p>Version idk.0. Copyrights (C) 2025 phenox, Inc.</p>
+    </div>
+    <script src="../javascript/description.js"></script>
   </body>
-
 </html>
-
-
-
-
-

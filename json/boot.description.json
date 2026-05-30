@@ -1,38 +1,38 @@
 [
     {
-        "id": "BNS",
+        "id": "bootNumLockState",
         "description": "Boot numlock state"
     },
     {
-        "id": "FSLD",
+        "id": "fullScreenLogoDisplay",
         "description": "Full Screen Logo Display"
     },
     {
-        "id": "FB",
+        "id": "fastBoot",
         "description": "Enable or disables boot with initialization of minimal set of devices requiered to launch active boot option. Has no effect for BBS boot options."
     },
     {
-        "id": "BMS",
+        "id": "bootModeSelect",
         "description": "Select boot mode LEGACY/UEFI"
     },
     {
-        "id": "BO1",
+        "id": "bootOption1",
         "description": "Sets the system boot order"
     },
     {
-        "id": "BO2",
+        "id": "bootOption2",
         "description": "Sets the system boot order"
     },
     {
-        "id": "BO3",
+        "id": "bootOption3",
         "description": "Sets the system boot order"
     },
     {
-        "id": "BO4",
+        "id": "bootOption4",
         "description": "Sets the system boot order"
     },
     {
-        "id": "BO5",
+        "id": "bootOption5",
         "description": "Sets the system boot order"
     },
     {

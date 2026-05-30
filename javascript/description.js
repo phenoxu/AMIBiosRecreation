@@ -1,5 +1,5 @@
 const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
-const path = `/AMIBiosRecreation/json/${currentPage}.description.json`;
+const path = `../json/${currentPage}.description.json`;
 
 const selectible = document.querySelectorAll('.selectible');
 const description = document.getElementById('description');

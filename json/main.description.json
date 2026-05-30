@@ -1,26 +1,26 @@
 [
     {
-        "id": "SD",
+        "id": "systemDate",
         "description": "Set the Date. Use Tab to switch between Data elements."
     },
     {
-        "id": "ST",
+        "id": "systemTime",
         "description": "Set the Time. Use Tab to switch between Data elements."
     },
     {
-        "id": "PI",
+        "id": "productInformation",
         "description": "Please leave me alone"
     },
     {
-        "id": "CI",
+        "id": "cpuInformation",
         "description": "CPU is the thing that does the math."
     },
     {
-        "id": "DI",
+        "id": "dimmInformation",
         "description": "I dont even know what it stands for."
     },
     {
-        "id": "SS",
+        "id": "securitySetting",
         "description": "Well yes but no, hun ? ok, by?"
     }
 ]
