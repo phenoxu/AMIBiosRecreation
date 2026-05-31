@@ -179,7 +179,7 @@ p, button, br {
     justify-content: space-evenly;
 }
 
-* {
+/** {
   outline: 2px solid red;
 
-}
+}*/
