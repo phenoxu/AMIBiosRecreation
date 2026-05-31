@@ -16,12 +16,13 @@ body * {
     padding: 0;
     font-family: GA_8x14;
     font-size: 22px;
+    font-weight: 100;
     line-height: 1;
 }
-p, br {
+p, button, br {
     margin-bottom: 4px;
 }
-.title {
+.header, .footer {
     background-color: blue;
     color: white;
     text-align: center;
@@ -45,23 +46,25 @@ p, br {
     background-color: lightgray;
     color: blue;
 }
-.container {
+.main {
     background-color: lightgray;
     padding: 12px 6px 12px 6px;
     color: blue;
 }
-.main {
+.main .container {
     display: flex;
     flex-direction: row;
     height: 100%;
     border: 1px solid blue;
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
 }
-.mainSetting {
+.main .setting {
     position: relative;
     padding: 14px 32px;
     flex: 9;
 }
-.mainCategory {
+.main .category {
     color: black;
 }
 .line {
@@ -69,52 +72,114 @@ p, br {
     grid-template-columns: 1fr 1fr;
     justify-items: start;
 }
-.selectible:hover {
+.main .selectible:hover {
     color: white;
 }
-.mainSetting div button {
+.main .setting button {
     background: none;
     border: none;
     color: inherit;
     font: inherit;
     cursor: pointer;
 }
-.mainSetting div button::before {
+.main .setting div button::before {
     content: "[";
 }
-.mainSetting div button::after {
+.main .setting div button::after {
     content: "]";
 }
-.mainOption {
+.main .option {
+    display: block;
     position: relative;
 }
-.mainOption::before {
+.main .option::before {
     content: "▶";
     position: absolute;
     left: -28px;
 }
-.hrVertical {
+.main .vertical {
     border: none;
-    width: 1px;
+    width: 3px;
     background-color: blue;
 }
-.mainInformation {
+.main .information {
     display: flex;
     flex-direction: column;
     flex: 3;
 }
-.mainInformation div {
+.main .information div {
     flex: 1;
     padding: 1lh 6px 1lh 6px;
 }
-.hrHorizontal {
+.main .horizontal {
     border: none;
     height: 1px;
     background-color: blue;
     margin: 0 6px;
 }
+.popup {
+    min-width: calc(1/5*100vw);
+    background-color: blue;
+    position: absolute;
+    color: lightgray;
+    padding: 12px 6px 12px 6px;
+    box-shadow: 1lh 1lh 0 black;
+}
+.popup .container {
+    display: grid;
+    background-color: blue;
+    justify-items: stretch;
+    grid-auto-rows: 1lh;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-left: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+}
+.popup .title {
+    background-color: blue;
+    position: absolute;
+    padding: 0 10px;
+    top: 3px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.popup p, .popup .line {
+    padding: 0 22px;
+    text-align: left;
+}
+.popup .message {
+    z-index: 1;
+    background: none;
+    color: inherit;
+    border: none;
+    grid-row: 1 / 6;
+    align-self: center;
+}
+.popup .horizontal {
+    background-color: lightgray;
+    width: 100%;
+    height: 1px;
+    border: none;
+}
+.popup .option {
+    z-index: 1;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    height: 1lh;
+}
+.popup .option:hover {
+    background-color: black;
+    color: white;
+}
+.popup .yesNo {
+    display: flex;
+    justify-content: space-evenly;
+}
 
-/** {
-  outline: 1px solid red;
+* {
+  outline: 2px solid red;
 
-}*/
+}

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/page.css">
   </head>
   <body>
-    <div class="title">
+    <div class="header">
         <p>Cool Setup Utility - Copyrights (C) 2025 phenox, Inc.</p>
     </div>
     <div class="navigationBar">
@@ -14,12 +14,12 @@
         <a href="../page/advanced.html" class="buttonNavigationBar">Advanced</a>
         <a href="../page/boot.html" class="buttonNavigationBar active">Boot</a>
         <a href="../page/security.html" class="buttonNavigationBar">Security</a>
-        <a href="../page/save & exit.html" class="buttonNavigationBar">Save & Exit</a>
+        <button class="buttonNavigationBar">Save & Exit</button>
     </div>
-    <div class="container">
-        <div class="main">
-            <div class="mainSetting">
-                <p class="mainCategory">Boot Configuration</p>
+    <div class="main">
+        <div class="container">
+            <div class="setting">
+                <p class="category">Boot Configuration</p>
                 <div id="bootNumLockState" class="line selectible">
                     <p>Boot NumLock State</p>
                     <button >On</button>
@@ -37,7 +37,7 @@
                     <button>UEFI with CMS</button>
                 </div>
                 <br>
-                <p class="mainCategory">FIXED BOOT ORDER Priorities</p>
+                <p class="category">FIXED BOOT ORDER Priorities</p>
                 <div id="bootOption1" class="line selectible">
                     <p>Boot Option #</p>
                     <button>USB Hard Disk:UEFI:...</button>
@@ -59,14 +59,14 @@
                     <button>Network</button>
                 </div>
                 <br>
-                <p id="UUHDDBP" class="mainOption selectible">UEFI USB Hard Disk Drive BBS Priorities</p>
+                <button id="UUHDDBP" class="option selectible">UEFI USB Hard Disk Drive BBS Priorities</button>
             </div>
-            <hr class="hrVertical">
-            <div class="mainInformation">
+            <hr class="vertical">
+            <div class="information">
                 <div>
                     <p id="description"><span class="defaultText">A very detailed description of hovered item</span></p>
                 </div>
-                <hr class="hrHorizontal">
+                <hr class="horizontal">
                 <div>
                     <p>→←: Select Screen
                     <br>↑↓: Select Item
@@ -80,7 +80,7 @@
             </div>
         </div>
     </div>
-    <div class="title">
+    <div class="footer">
         <p>Version idk.0. Copyrights (C) 2025 phenox, Inc.</p>
     </div>
     <script src="../javascript/description.js"></script>

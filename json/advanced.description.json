@@ -1,0 +1,26 @@
+[
+    {
+        "id": "processors",
+        "description": "CPU Configuration Parameters"
+    },
+        {
+        "id": "usbPorts",
+        "description": "CPU Configuration Parameters"
+    },
+        {
+        "id": "serialPortConsoleRedirection",
+        "description": "CPU Configuration Parameters"
+    },
+        {
+        "id": "networkStack",
+        "description": "CPU Configuration Parameters"
+    },
+        {
+        "id": "trustedComputing",
+        "description": "CPU Configuration Parameters"
+    },
+        {
+        "id": "bmcNetwork",
+        "description": "CPU Configuration Parameters"
+    }
+]

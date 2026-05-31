@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>template</title>
+    <title>Advanced</title>
     <link rel="stylesheet" href="../css/page.css">
   </head>
   <body>
@@ -11,7 +11,7 @@
     </div>
     <div class="navigationBar">
         <a href="../page/main.html" class="buttonNavigationBar">Main</a>
-        <a href="../page/advanced.html" class="buttonNavigationBar">Advanced</a>
+        <a href="../page/advanced.html" class="buttonNavigationBar active">Advanced</a>
         <a href="../page/boot.html" class="buttonNavigationBar">Boot</a>
         <a href="../page/security.html" class="buttonNavigationBar">Security</a>
         <button class="buttonNavigationBar">Save & Exit</button>
@@ -19,12 +19,12 @@
     <div class="main">
         <div class="container">
             <div class="setting">
-                <p class="category">Title</p>
-                <div id="id" class="line selectible">
-                    <p>Name</p>
-                    <button >Option</button>
-                </div>
-                <p class="option selectible">Things</p>
+                <button id="processors" class="option selectible">Processors</button>
+                <button id="usbPorts" class="option selectible">USB Ports</button>
+                <button id="serialPortConsoleRedirection" class="option selectible">Serial Port Console Redirection</button>
+                <button id="networkStack" class="option selectible">Network Stack</button>
+                <button id="trustedComputing" class="option selectible">Trusted Computing</button>
+                <button id="bmcNetwork" class="option selectible">BMC Network</button>
             </div>
             <hr class="vertical">
             <div class="information">
@@ -48,7 +48,6 @@
     <div class="footer">
         <p>Version idk.0. Copyrights (C) 2025 phenox, Inc.</p>
     </div>
-
     <script src="../javascript/description.js"></script>
   </body>
 </html>
