@@ -4,6 +4,8 @@ const path = `../json/${currentPage}.description.json`;
 const selectible = document.querySelectorAll('.selectible');
 const description = document.getElementById('description');
 
+const reservedSpace = document.getElementById('reservedSpace')
+
 fetch(path)
     .then(response => {
         if (!response.ok) {
@@ -31,3 +33,9 @@ fetch(path)
         console.error('Error:', error);
         description.innerHTML = '<span style="color: red;">Error while loading...</span>';
     });
+
+function popup(type) {
+    if (type == "Save&Exit") {
+        reservedSpace.innerHTML = './popupSave&Exit';
+    }
+}

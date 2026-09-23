@@ -121,8 +121,11 @@ p, button, br {
     min-width: calc(1/5*100vw);
     background-color: blue;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: lightgray;
-    padding: 12px 6px 12px 6px;
+    padding: 12px 6px;
     box-shadow: 1lh 1lh 0 black;
 }
 .popup .container {
@@ -130,7 +133,6 @@ p, button, br {
     background-color: blue;
     justify-items: stretch;
     grid-auto-rows: 1lh;
-    width: 100%;
     border: 1px solid lightgray;
     border-left: 3px solid lightgray;
     border-right: 3px solid lightgray;
@@ -148,6 +150,7 @@ p, button, br {
     text-align: left;
 }
 .popup .message {
+    justify-self: center;
     z-index: 1;
     background: none;
     color: inherit;
@@ -163,6 +166,7 @@ p, button, br {
 }
 .popup .option {
     z-index: 1;
+    justify-self: center;
     background: none;
     border: none;
     color: inherit;

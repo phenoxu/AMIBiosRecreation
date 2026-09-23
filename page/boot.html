@@ -14,7 +14,7 @@
         <a href="../page/advanced.html" class="buttonNavigationBar">Advanced</a>
         <a href="../page/boot.html" class="buttonNavigationBar active">Boot</a>
         <a href="../page/security.html" class="buttonNavigationBar">Security</a>
-        <button class="buttonNavigationBar">Save & Exit</button>
+        <button class="buttonNavigationBar" id="Save&Exit" onclick="popup('Save&Exit')">Save & Exit</button>
     </div>
     <div class="main">
         <div class="container">
@@ -22,7 +22,7 @@
                 <p class="category">Boot Configuration</p>
                 <div id="bootNumLockState" class="line selectible">
                     <p>Boot NumLock State</p>
-                    <button >On</button>
+                    <button>On</button>
                 </div>
                 <div id="fullScreenLogoDisplay" class="line selectible">
                     <p>Full Screen Logo Display</p>
@@ -83,6 +83,7 @@
     <div class="footer">
         <p>Version idk.0. Copyrights (C) 2025 phenox, Inc.</p>
     </div>
+    <div id="reservedSpace"></div>
     <script src="../javascript/description.js"></script>
   </body>
 </html>
