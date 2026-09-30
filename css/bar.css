@@ -1,0 +1,15 @@
+.bar {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    padding: 0 32px;
+}
+nav > *{
+    color: var(--text-color-alt);
+    padding: 0 1em;
+    cursor: pointer;
+}

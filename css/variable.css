@@ -1,0 +1,8 @@
+* {
+    --background-color: blue;
+    --background-color-alt: lightgray;
+    --text-color: white;
+    --text-color-alt: lightgray;
+    --title-color: black;
+    --border-color: blue;
+}

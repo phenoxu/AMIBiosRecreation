@@ -2,188 +2,26 @@
     font-family: GA_8x14;
     src: url("../font/Px437_ACM_VGA_8x16.ttf");
 }
-/* main divider */
+
+* {
+    /*
+    border: solid 1px red;
+    */
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    font-weight: 100;
+    font-size: 22px;
+    font-family: GA_8x14;
+    color: var(--background-color);
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
 body {
     display: grid;
-    grid-template-rows: 1lh 1lh 1fr 1lh;
-    background-color: blue;
+    grid-template-rows: 2lh 1fr 1lh;
+    background-color: var(--background-color-alt);
     height: 100vh;
-    margin: 0;
-    padding: 0;
 }
-body * {
-    margin: 0;
-    padding: 0;
-    font-family: GA_8x14;
-    font-size: 22px;
-    font-weight: 100;
-    line-height: 1;
-}
-p, button, br {
-    margin-bottom: 4px;
-}
-.header, .footer {
-    background-color: blue;
-    color: white;
-    text-align: center;
-}
-.navigationBar {
-    background-color: blue;
-    display: flex;
-    padding: 0 32px;
-    height: 1em;
-}
-.buttonNavigationBar {
-    background-color: blue;
-    color: lightgray;
-    border: none;
-    padding: 0 1em;
-    height: 100%;
-    text-decoration: none;
-    cursor: pointer;
-}
-.active {
-    background-color: lightgray;
-    color: blue;
-}
-.main {
-    background-color: lightgray;
-    padding: 12px 6px 12px 6px;
-    color: blue;
-}
-.main .container {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    border: 1px solid blue;
-    border-left: 3px solid blue;
-    border-right: 3px solid blue;
-}
-.main .setting {
-    position: relative;
-    padding: 14px 32px;
-    flex: 9;
-}
-.main .category {
-    color: black;
-}
-.line {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
-}
-.main .selectible:hover {
-    color: white;
-}
-.main .setting button {
-    background: none;
-    border: none;
-    color: inherit;
-    font: inherit;
-    cursor: pointer;
-}
-.main .setting div button::before {
-    content: "[";
-}
-.main .setting div button::after {
-    content: "]";
-}
-.main .option {
-    display: block;
-    position: relative;
-}
-.main .option::before {
-    content: "▶";
-    position: absolute;
-    left: -28px;
-}
-.main .vertical {
-    border: none;
-    width: 3px;
-    background-color: blue;
-}
-.main .information {
-    display: flex;
-    flex-direction: column;
-    flex: 3;
-}
-.main .information div {
-    flex: 1;
-    padding: 1lh 6px 1lh 6px;
-}
-.main .horizontal {
-    border: none;
-    height: 1px;
-    background-color: blue;
-    margin: 0 6px;
-}
-.popup {
-    min-width: calc(1/5*100vw);
-    background-color: blue;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: lightgray;
-    padding: 12px 6px;
-    box-shadow: 1lh 1lh 0 black;
-}
-.popup .container {
-    display: grid;
-    background-color: blue;
-    justify-items: stretch;
-    grid-auto-rows: 1lh;
-    border: 1px solid lightgray;
-    border-left: 3px solid lightgray;
-    border-right: 3px solid lightgray;
-}
-.popup .title {
-    background-color: blue;
-    position: absolute;
-    padding: 0 10px;
-    top: 3px;
-    transform: translateX(-50%);
-    left: 50%;
-}
-.popup p, .popup .line {
-    padding: 0 22px;
-    text-align: left;
-}
-.popup .message {
-    justify-self: center;
-    z-index: 1;
-    background: none;
-    color: inherit;
-    border: none;
-    grid-row: 1 / 6;
-    align-self: center;
-}
-.popup .horizontal {
-    background-color: lightgray;
-    width: 100%;
-    height: 1px;
-    border: none;
-}
-.popup .option {
-    z-index: 1;
-    justify-self: center;
-    background: none;
-    border: none;
-    color: inherit;
-    font: inherit;
-    cursor: pointer;
-    height: 1lh;
-}
-.popup .option:hover {
-    background-color: black;
-    color: white;
-}
-.popup .yesNo {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/** {
-  outline: 2px solid red;
-
-}*/

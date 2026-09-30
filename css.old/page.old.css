@@ -52,10 +52,6 @@ article {
 .lined * {
     display: inline;
 }
-.secondary {
-    position: absolute;
-    left: 50%;
-}
 .selectible:hover {
     color: white;
 }
@@ -105,7 +101,6 @@ hr {
     left: 0;
     content: "▶";
 }
-
 .inAside {
     flex: 1;
     padding: 1em 6px 1em 6px;

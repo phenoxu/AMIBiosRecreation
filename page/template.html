@@ -1,54 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>template</title>
-    <link rel="stylesheet" href="../css/page.css">
-  </head>
-  <body>
-    <div class="header">
-        <p>Cool Setup Utility - Copyrights (C) 2025 phenox, Inc.</p>
-    </div>
-    <div class="navigationBar">
-        <a href="../page/main.html" class="buttonNavigationBar">Main</a>
-        <a href="../page/advanced.html" class="buttonNavigationBar">Advanced</a>
-        <a href="../page/boot.html" class="buttonNavigationBar">Boot</a>
-        <a href="../page/security.html" class="buttonNavigationBar">Security</a>
-        <button class="buttonNavigationBar">Save & Exit</button>
-    </div>
-    <div class="main">
-        <div class="container">
-            <div class="setting">
-                <p class="category">Title</p>
-                <div id="id" class="line selectible">
-                    <p>Name</p>
-                    <button >Option</button>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>template</title>
+        <link rel="stylesheet" href="../css/variable.css">
+        <link rel="stylesheet" href="../css/page.css">
+        <link rel="stylesheet" href="../css/bar.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header class="bar">Cool Setup Utility - Copyrights (C) 2025 phenox, Inc.
+            <nav>
+                <a href="../page/main.html" class="buttonNavigation active">Main</a>
+                <a href="../page/advanced.html" class="buttonNavigation">Advanced</a>
+                <a href="../page/boot.html" class="buttonNavigation">Boot</a>
+                <a href="../page/security.html" class="buttonNavigationBar">Security</a>
+                <button class="buttonNavigationBar">Save & Exit</button>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <p>Title</p>
+                <div class="line selectible">
+                    <label for="id">Name</label>
+                    <button class="button" id="id">Option</button>
                 </div>
-                <p class="option selectible">Things</p>
-            </div>
-            <hr class="vertical">
-            <div class="information">
-                <div>
-                    <p id="description"><span class="defaultText">A very detailed description of hovered item</span></p>
-                </div>
-                <hr class="horizontal">
-                <div>
-                    <p>→←: Select Screen
+            </article>
+            <hr id="hrVertical">
+            <aside>
+                <div class="container" id="description">1</div>
+                <hr id="hrHorizontal">
+                <div class="container" id="control">
+                    →←: Select Screen
                     <br>↑↓: Select Item
                     <br>Enter: Select
                     <br>+/-: Change Opt.
                     <br>F1: General Help
                     <br>F9: Optimized Default
                     <br>F10: Save & Exit
-                    <br>ESC: Exit</p>
+                    <br>ESC: Exit
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Version idk.0. Copyrights (C) 2025 phenox, Inc.</p>
-    </div>
-
-    <script src="../javascript/description.js"></script>
-  </body>
+            </aside>
+        </main>
+        <footer class="bar">Version idk.0. Copyrights (C) 2025 phenox, Inc.</footer>
+    </body>
 </html>

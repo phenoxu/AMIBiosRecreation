@@ -1,0 +1,52 @@
+main {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 12px 6px;
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--border-color);
+    border-right: 3px solid var(--border-color);
+}
+.container {
+    padding: 1lh 6px;
+}
+article {
+    flex: 3;
+    grid-area: 1 / 1 / 2 / 4;
+    padding: 14px 32px;
+}
+article p{
+    color: black;
+}
+.line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+}
+.selectible:hover {
+    color: var(--text-color);
+}
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.button::before {
+    content: "[";
+}
+.button::after {
+    content: "]";
+}
+#description, #control{
+    flex: 1;
+}
+#hrHorizontal {
+    border: none;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 0 6px;
+}
+#hrVertical {
+    border: none;
+    width: 3px;
+    background-color: var(--border-color);
+}
